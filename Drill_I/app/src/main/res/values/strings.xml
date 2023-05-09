@@ -2,4 +2,8 @@
     <string name="app_name">Guardians</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="purchase_summary_test">Purchase Summary Fragment</string>
+    <string name="movie_info_test">Movie Info Fragment</string>
+    <string name="buy_tickets_test">Buy Tickets Fragment</string>
+
 </resources>

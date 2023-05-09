@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center|top"
-            android:layout_marginTop="-40dp"
+            android:layout_marginTop="-60dp"
             android:layout_marginBottom="15dp"
 
             android:text="@string/info_title"
@@ -94,7 +94,7 @@
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginEnd="10dp"
-                        android:src="@drawable/imdb_logo_transparent"
+                        android:src="@drawable/imdb_logo"
                         android:text="@string/imdb_rating_title" />
 
                     <LinearLayout
@@ -122,20 +122,44 @@
         </LinearLayout>
 
         <TextView
+            style="@style/ParagraphTextStyle"
             android:layout_width="match_parent"
-            android:text="@string/story_line"
-            style="@style/ParagraphTextStyle" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:text="@string/story_line" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/gotBuyTicketsBTN"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:srcCompat="@android:drawable/ic_input_add" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tooltip_swipe_carousel"
+            style="@style/ParagraphTextStyle"
+            android:layout_marginBottom="0dp"
+            android:paddingBottom="0dp"
+            android:textColor="@color/grayedTextFont"/>
 
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/image_carousel"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="135dp" />
+
+
+        <Button
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/gotBuyTicketsBTN"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/buyTicketsBtn"
+            android:backgroundTint="@color/GuardiansGoldDark"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/ticket_icon_vec"
+            android:layout_marginTop="20dp"
+            android:padding="10dp" />
     </LinearLayout>
 
 </FrameLayout>

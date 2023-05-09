@@ -22,6 +22,10 @@
         <action
             android:id="@+id/action_buyTickets_to_purchaseSummary"
             app:destination="@id/purchaseSummary" />
+        <action
+            android:id="@+id/action_buyTickets_pop"
+            app:popUpTo="@id/buyTickets"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/purchaseSummary"
@@ -31,6 +35,13 @@
         <action
             android:id="@+id/action_purchaseSummary_to_movieInfo"
             app:destination="@id/movieInfo" />
+        <action
+            android:id="@+id/summaryReturnToInfo"
+            app:destination="@id/movieInfo" />
+        <action
+            android:id="@+id/action_purchaseSummary_pop"
+            app:popUpTo="@id/purchaseSummary"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/startupLoader"

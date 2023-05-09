@@ -4,7 +4,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="GuardiansGold">#eccb97</color>
     <color name="GuardiansGoldDark">#99856c</color>
-    <color name="textFont">#C1C5C6</color>
+    <color name="textFont">#DBE1E2</color>
+    <color name="grayedTextFont">#909292</color>
+
+    <color name="primaryBtn">#0867BD</color>
+
 
 
     <color name="background">#021019</color>

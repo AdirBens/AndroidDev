@@ -5,24 +5,32 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.constraintlayout.helper.widget.Carousel
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.ItemTouchHelper.*
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.viewpager.widget.ViewPager
 import com.benshimoladir.guardians.databinding.FragmentMovieInfoBinding
-
-// TODO: Rename parameter arguments, choose names that match
 
 class MovieInfo : Fragment() {
 
     private var _binding : FragmentMovieInfoBinding? = null
     private val binding get() = _binding!!
 
+    private lateinit var imageCarousel: ViewPager
+    private val imageList = listOf(R.drawable.scen_1, R.drawable.scen_2, R.drawable.scen_3,
+        R.drawable.scen_4, R.drawable.scen_5)
+
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        imageCarousel = view.findViewById(R.id.image_carousel)
+        imageCarousel.adapter = ImageCarouselAdapter(requireContext(), imageList)
     }
 
     override fun onCreateView(

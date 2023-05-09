@@ -5,6 +5,14 @@
     <string name="tooltip_go_buyTickets_grootBtn">Get Your tickets now!</string>
     <string name="author_name">© By Adir Ben-Shimol</string>
 
+    <string name="tooltip_swipe_carousel">Swipe to the next image</string>
+    <string name="buyTicketsBtn">Buy Tickets</string>
+    <string name="getBack">Back</string>
+
+    <string name="choose_seat">Please choose your seats</string>
+
+
+
     <string name="story_line">After stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth is now the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan and his team and save the galaxy from his power, Quill creates a team of space heroes known as the "Guardians of the Galaxy" to save the galaxy.
     </string>
     

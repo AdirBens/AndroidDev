@@ -4,26 +4,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/cardview_dark_background"
+    android:background="@color/background"
     tools:context=".BuyTickets">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:text="@string/buy_tickets_test" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/gotPurchaseSummaryBTN"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add"
-        android:contentDescription="Go to PurchaseSummary Fragments Button" />
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/tickets_back_button"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/getBack"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/textFont"
+            android:textColor="@color/GuardiansGoldDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/back_arrow" />
+
+        <TextView
+            style="@style/TitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/GuardiansGoldDark"
+            android:text="@string/info_title"
+            />
+
+        <TextView
+            style="@style/SeconderyTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/textFont"
+            android:text="@string/choose_seat"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/cinema_screen"/>
+
+
+    </LinearLayout>
+
 
 </FrameLayout>

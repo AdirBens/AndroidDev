@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_navigator"
-    app:startDestination="@id/movieInfo">
+    app:startDestination="@id/startupLoader">
 
     <fragment
         android:id="@+id/movieInfo"
@@ -30,6 +30,15 @@
         tools:layout="@layout/fragment_purchase_summary" >
         <action
             android:id="@+id/action_purchaseSummary_to_movieInfo"
+            app:destination="@id/movieInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/startupLoader"
+        android:name="com.benshimoladir.guardians.StartupLoader"
+        android:label="fragment_startup_loader"
+        tools:layout="@layout/fragment_startup_loader" >
+        <action
+            android:id="@+id/action_startupLoader_to_movieInfo"
             app:destination="@id/movieInfo" />
     </fragment>
 </navigation>

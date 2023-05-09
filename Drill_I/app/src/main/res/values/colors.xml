@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="GuardiansGold">#eccb97</color>
+    <color name="GuardiansGoldDark">#99856c</color>
+    <color name="textFont">#C1C5C6</color>
+
+
+    <color name="background">#021019</color>
+    <color name="background_bright">#021E34</color>
+
 </resources>

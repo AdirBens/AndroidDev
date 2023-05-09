@@ -1,6 +1,21 @@
 <resources>
     <string name="app_name">Guardians</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="info_title">Guardians Of The Galaxy</string>
+    <string name="tooltip_go_buyTickets_grootBtn">Get Your tickets now!</string>
+    <string name="author_name">© By Adir Ben-Shimol</string>
+
+    <string name="story_line">After stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth is now the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan and his team and save the galaxy from his power, Quill creates a team of space heroes known as the "Guardians of the Galaxy" to save the galaxy.
+    </string>
+    
+    <string name="release_year">2014</string>
+    <string name="parental">PG-13</string>
+    <string name="movie_duration">2h 1m</string>
+    <string name="genre">Action | Adventure | Comedy | Sci-Fi</string>
+    <string name="imdb_rating_title">IMDb Rating</string>
+    <string name="imdb_rating">8.0/10</string>
+
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="purchase_summary_test">Purchase Summary Fragment</string>
     <string name="movie_info_test">Movie Info Fragment</string>

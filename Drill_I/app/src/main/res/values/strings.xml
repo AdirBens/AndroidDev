@@ -43,7 +43,6 @@
     <string name="purchaseTickets_exceptions_cant_choose_past" translatable="false">You can\'t watch movies in the Past.</string>
 
 
-
     <string name="purchaseSummary_title">Yours purchase summary</string>
     <string name="purchaseSummary_total_price">Total</string>
     <string name="purchaseSummary_kids_price">Kids</string>
@@ -55,7 +54,7 @@
     <string name="purchaseSummary_hint_barcode">Tip! Scan this QR to skip the line</string>
     <string name="purchaseSummary_thank_you">Thank you!</string>
     <string name="purchaseSummary_approveAndPay_btn">Confirm &amp; Pay</string>
-    <string name="purchaseSummary_dontNeedToPay" translatable="false">Don\'t need to pay! Its on the Reichman House!</string>
+    <string name="purchaseSummary_dontNeedToPay" translatable="false">No need to pay! Its on the Reichman House!</string>
     <string name="_zero_constant">0</string>
 
 </resources>

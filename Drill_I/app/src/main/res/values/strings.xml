@@ -1,32 +1,61 @@
 <resources>
     <string name="app_name">Guardians</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="info_title">Guardians Of The Galaxy</string>
-    <string name="tooltip_go_buyTickets_grootBtn">Get Your tickets now!</string>
-    <string name="author_name">© By Adir Ben-Shimol</string>
 
-    <string name="tooltip_swipe_carousel">Swipe to the next image</string>
-    <string name="buyTicketsBtn">Buy Tickets</string>
-    <string name="getBack">Back</string>
+    <string name="common_movie_name">Guardians Of The Galaxy</string>
+    <string name="common_back_button">Back</string>
+    <string name="common_vip_badge" translatable="false">VIP</string>
 
-    <string name="choose_seat">Please choose your seats</string>
+    <string name="common_image_label" translatable="false">Image From Scene</string>
+
+    <string name="loader_author_name">© By Adir Ben-Shimol</string>
+
+    <string name="movieInfo_movie_plot">After stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth is now the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan and his team and save the galaxy from his power, Quill creates a team of space heroes known as the "Guardians of the Galaxy" to save the galaxy.</string>
+    <string name="movieInfo_genre">Action | Adventure | Comedy | Sci-Fi</string>
+    <string name="movieInfo_release">2014</string>
+    <string name="movieInfo_parental">PG-13</string>
+    <string name="movieInfo_duration">2h 1m</string>
+    <string name="movieInfo_imdb_rating">8/10</string>
+    <string name="movieInfo_hint_imageCarousel">Swipe to the next image</string>
+    <string name="movieInfo_tickets_on_sale">Tickets on sale now…</string>
+    <string name="movieInfo_goto_purchase_tickets">Get Your\'s Now!</string>
+    <string name="movieInfo_scene_1" translatable="false">Scene 1</string>
+    <string name="movieInfo_scene_2" translatable="false">Scene 2</string>
+    <string name="movieInfo_scene_3" translatable="false">Scene 3</string>
+    <string name="movieInfo_scene_4" translatable="false">Scene 4</string>
+    <string name="movieInfo_scene_5" translatable="false">Scene 5</string>
+
+
+    <string name="purchaseTickets_hint_choose_tickets">Choose your tickets…</string>
+    <string name="purchaseTickets_hint_kids_number">How many kids?</string>
+    <string name="purchaseTickets_hint_adults_number">How many adults?</string>
+    <string name="purchaseTickets_hint_screening_date">Choose Screening Date</string>
+    <string name="purchaseTickets_hint_theatre">Choose Theatre</string>
+    <string name="purchaseTickets_theatre_glilot">Cinema-City Glilot</string>
+    <string name="purchaseTickets_theatre_krayot">Yes-Planet Krayot</string>
+    <string name="purchaseTickets_theatre_idc">VIP Reichman</string>
+    <string name="purchaseTickets_orderNow_btn">Order Now!</string>
+
+    <string name="purchaseTickets_exceptions_try_again" translatable="false">Lets try again</string>
+    <string name="purchaseTickets_exceptions_must_choose_tickets" translatable="false">You must choose at least one ticket.</string>
+    <string name="purchaseTickets_exceptions_kids_companion" translatable="false">A child must be accompanied by an adult.</string>
+    <string name="purchaseTickets_exceptions_mental_sake" translatable="false">For the sake of mental well-being in the hall, choose a saner adult-child ratio.</string>
+    <string name="purchaseTickets_exceptions_choose_date" translatable="false">Please choose screening date.</string>
+    <string name="purchaseTickets_exceptions_cant_choose_past" translatable="false">You can\'t watch movies in the Past.</string>
 
 
 
-    <string name="story_line">After stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth is now the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan and his team and save the galaxy from his power, Quill creates a team of space heroes known as the "Guardians of the Galaxy" to save the galaxy.
-    </string>
-    
-    <string name="release_year">2014</string>
-    <string name="parental">PG-13</string>
-    <string name="movie_duration">2h 1m</string>
-    <string name="genre">Action | Adventure | Comedy | Sci-Fi</string>
-    <string name="imdb_rating_title">IMDb Rating</string>
-    <string name="imdb_rating">8.0/10</string>
-
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="purchase_summary_test">Purchase Summary Fragment</string>
-    <string name="movie_info_test">Movie Info Fragment</string>
-    <string name="buy_tickets_test">Buy Tickets Fragment</string>
+    <string name="purchaseSummary_title">Yours purchase summary</string>
+    <string name="purchaseSummary_total_price">Total</string>
+    <string name="purchaseSummary_kids_price">Kids</string>
+    <string name="purchaseSummary_adults_price">Adults</string>
+    <string name="purchaseSummary_tickets_tobe_order_title" translatable="false">Tickets To Be order</string>
+    <string name="purchaseSummary_vip_extra">VIP Extra</string>
+    <string name="purchaseSummary_screening_date">Screening-Date</string>
+    <string name="purchaseSummary_screening_theatre">At Theatre</string>
+    <string name="purchaseSummary_hint_barcode">Tip! Scan this QR to skip the line</string>
+    <string name="purchaseSummary_thank_you">Thank you!</string>
+    <string name="purchaseSummary_approveAndPay_btn">Confirm &amp; Pay</string>
+    <string name="purchaseSummary_dontNeedToPay" translatable="false">Don\'t need to pay! Its on the Reichman House!</string>
+    <string name="_zero_constant">0</string>
 
 </resources>

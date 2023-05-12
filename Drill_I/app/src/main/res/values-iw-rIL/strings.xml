@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">השומרים</string>
+
+    <string name="common_movie_name">שומרי הגלקסיה</string>
+    <string name="common_back_button">חזור</string>
+    <string name="common_vip_badge" translatable="false">VIP</string>
+
+    <string name="common_image_label">תמונות מהסרט</string>
+
+    <string name="loader_author_name">© אדיר בן שימול</string>
+
+    <string name="movieInfo_movie_plot">לאחר שגנב כדור מסתורי בקצה החלל החיצון, פיטר קוויל מכדור הארץ הוא כעת המטרה העיקרית של מצוד בראשות הנבל המכונה רונאן המאשים. כדי לעזור להילחם ברונאן ובצוותו ולהציל את הגלקסיה מכוחו, קוויל יוצר צוות של גיבורי חלל המכונים "שומרי הגלקסיה" כדי להציל את הגלקסיה.</string>
+    <string name="movieInfo_genre">אקשן | הרפתקאות | קומדיה | מדע בדיוני</string>
+    <string name="movieInfo_release">2014</string>
+    <string name="movieInfo_parental">PG-13</string>
+    <string name="movieInfo_duration">2ש 1ד</string>
+    <string name="movieInfo_imdb_rating">8/10</string>
+    <string name="movieInfo_hint_imageCarousel">החלק לתמונה הבאה</string>
+    <string name="movieInfo_tickets_on_sale">מכירת הכרטיסים החלה…</string>
+    <string name="movieInfo_goto_purchase_tickets">השג את שלך עכשיו</string>
+    <string name="movieInfo_scene_1" translatable="false">תמונה 1</string>
+    <string name="movieInfo_scene_2" translatable="false">תמונה 2</string>
+    <string name="movieInfo_scene_3" translatable="false">תמונה 3</string>
+    <string name="movieInfo_scene_4" translatable="false">תמונה 4</string>
+    <string name="movieInfo_scene_5" translatable="false">תמונה 5</string>
+
+
+    <string name="purchaseTickets_hint_choose_tickets">בחר את הכרטיסים שלך…</string>
+    <string name="purchaseTickets_hint_kids_number">כמה ילדים?</string>
+    <string name="purchaseTickets_hint_adults_number">כמה מבוגרים?</string>
+    <string name="purchaseTickets_hint_screening_date">בחר תאריך הקרנה</string>
+    <string name="purchaseTickets_hint_theatre">בחר קולנוע</string>
+    <string name="purchaseTickets_theatre_glilot">סינמה-סיטי גלילות</string>
+    <string name="purchaseTickets_theatre_krayot">יס-פלאנט קריות</string>
+    <string name="purchaseTickets_theatre_idc">VIP רייכמן</string>
+    <string name="purchaseTickets_orderNow_btn">הזמן עכשיו!</string>
+
+    <string name="purchaseTickets_exceptions_try_again" translatable="false">נסה שוב</string>
+    <string name="purchaseTickets_exceptions_must_choose_tickets" translatable="false">חייב לבחור לפחות כרטיס אחד</string>
+    <string name="purchaseTickets_exceptions_kids_companion" translatable="false">ילד חייב בליווי מבוגר</string>
+    <string name="purchaseTickets_exceptions_mental_sake" translatable="false">למען הרווחה הנפשית של הצופים, בחר יחס ילדים-מבוגרים שפוי</string>
+    <string name="purchaseTickets_exceptions_choose_date" translatable="false">אנא בחר מועד הקרנה</string>
+    <string name="purchaseTickets_exceptions_cant_choose_past" translatable="false">אתה לא יכול לראות סרט בעבר</string>
+
+
+
+    <string name="purchaseSummary_title">סיכום הכרטיסים שלך</string>
+    <string name="purchaseSummary_total_price">סך-הכל</string>
+    <string name="purchaseSummary_kids_price">ילדים</string>
+    <string name="purchaseSummary_adults_price">מבוגרים</string>
+    <string name="purchaseSummary_tickets_tobe_order_title" translatable="false">כרטיסים שיוזמנו</string>
+    <string name="purchaseSummary_vip_extra">VIP תוספת</string>
+    <string name="purchaseSummary_screening_date">מועד הקרנה</string>
+    <string name="purchaseSummary_screening_theatre">בבית הקולנוע</string>
+    <string name="purchaseSummary_hint_barcode">המלצה! הצגת קוד זה תקצר את זמן ההמתנה בתור</string>
+    <string name="purchaseSummary_thank_you">תודה רבה!</string>
+    <string name="purchaseSummary_approveAndPay_btn">אישור ותשלום</string>
+    <string name="purchaseSummary_dontNeedToPay" translatable="false">לא צריך לשלם! זה על חשבון הרייכמן</string>
+    <string name="_zero_constant">0</string>
+
+</resources>

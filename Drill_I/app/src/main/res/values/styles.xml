@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="TitleStyle" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="fontFamily">@font/guardians</item>
-        <item name="android:textSize">30sp</item>
-<!--        <item name="android:textColor">@color/white</item>-->
+        <item name="android:textSize">26sp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:letterSpacing">0.05</item>
         <item name="android:textStyle">bold</item>
@@ -11,15 +11,15 @@
         <item name="android:shadowDx">0</item>
         <item name="android:shadowDy">0</item>
         <item name="android:shadowRadius">100</item>
-
+        <item name="android:gravity">center</item>
         <item name="android:layout_marginTop">40dp</item>
         <item name="android:layout_marginBottom">30dp</item>
     </style>
 
-    <style name="SeconderyTitleStyle" parent="TextAppearance.MaterialComponents.Headline6">
+    <style name="secTitleStyle">
         <item name="fontFamily">@font/guardians</item>
         <item name="android:textSize">10sp</item>
-        <item name="android:textColor">@color/GuardiansGoldDark</item>
+        <item name="android:textColor">@color/guardians_gold_dark</item>
         <item name="android:shadowColor">@color/white</item>
         <item name="android:shadowDx">0</item>
         <item name="android:shadowDy">0</item>
@@ -28,12 +28,13 @@
         <item name="android:layout_marginBottom">5dp</item>
     </style>
 
-    <style name="MainTextStyle" parent="TextAppearance.MaterialComponents.Headline6">
+
+    <style name="mainTextStyle">
         <item name="fontFamily">@font/roboto_medium</item>
         <item name="android:textSize">13sp</item>
         <item name="android:layout_marginTop">3dp</item>
         <item name="android:layout_marginBottom">1dp</item>
-        <item name="android:textColor">@color/textFont</item>
+        <item name="android:textColor">@color/guardians_stone</item>
         <item name="android:shadowColor">@color/white</item>
         <item name="android:shadowDx">0</item>
         <item name="android:shadowDy">0</item>
@@ -41,7 +42,20 @@
         <item name="lineSpacing">10dp</item>
     </style>
 
-    <style name="ParagraphTextStyle" parent="TextAppearance.MaterialComponents.Headline6">
+    <style name="thirdTitleStyle">
+        <item name="fontFamily">@font/guardians</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:textColor">@color/guardians_stone</item>
+        <item name="android:shadowColor">@color/white</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">0.1</item>
+        <item name="lineSpacing">10dp</item>
+    </style>
+
+    <style name="paragraphStyle">
         <item name="fontFamily">@font/roboto_medium</item>
         <item name="android:textSize">13sp</item>
         <item name="android:layout_marginStart">10dp</item>
@@ -49,14 +63,62 @@
         <item name="android:layout_marginTop">15dp</item>
         <item name="android:paddingStart">20dp</item>
         <item name="android:paddingEnd">20dp</item>
-
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/textFont</item>
+        <item name="android:textColor">@color/guardians_stone</item>
         <item name="android:shadowColor">@color/white</item>
         <item name="android:shadowDx">0</item>
         <item name="android:shadowDy">0</item>
         <item name="android:shadowRadius">0.1</item>
         <item name="android:lineSpacingExtra">3sp</item>
     </style>
+
+
+    <style name="backButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:text">@string/common_back_button</item>
+        <item name="android:textColor">@color/guardians_gold_dark</item>
+        <item name="strokeColor">@color/guardians_gold_dark</item>
+        <item name="icon">@drawable/common_back_arrow</item>
+        <item name="iconTint">@color/guardians_gold_dark</item>
+        <item name="iconGravity">start</item>
+    </style>
+
+    <style name="chooseTicketsButtonStyle" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="android:text">@string/movieInfo_goto_purchase_tickets</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/guardians_gold_dark</item>
+        <item name="icon">@drawable/common_tickets_icon_white</item>
+        <item name="iconGravity">end</item>
+    </style>
+
+    <style name="approveAndPayButtonStyle" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="android:text">@string/purchaseSummary_approveAndPay_btn</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">@color/guardians_gold</item>
+        <item name="icon">@drawable/common_cart_icon_black</item>
+        <item name="iconGravity">start</item>
+    </style>
+
+    <style name="chooseDatesButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <item name="android:text">@string/purchaseSummary_approveAndPay_btn</item>
+        <item name="android:textColor">@color/guardians_gold_dark</item>
+        <item name="strokeColor">@color/guardians_gold_dark</item>
+        <item name="icon">@drawable/common_calendar_icon_colored</item>
+        <item name="iconGravity">start</item>
+    </style>
+
+    <style name="vipBadgeStyle">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">@color/guardians_gold</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">10</item>
+        <item name="lineSpacing">10dp</item>
+        <item name="fabCradleRoundedCornerRadius">10dp</item>
+    </style>
+
 
 </resources>

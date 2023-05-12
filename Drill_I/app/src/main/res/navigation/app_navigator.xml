@@ -3,29 +3,46 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_navigator"
-    app:startDestination="@id/startupLoader">
+    app:startDestination="@id/openLoader">
 
+    <fragment
+        android:id="@+id/openLoader"
+        android:name="com.benshimoladir.guardians.OpenLoader"
+        android:label="fragment_open_loader"
+        tools:layout="@layout/fragment_open_loader" >
+        <action
+            android:id="@+id/action_openLoader_to_movieInfo"
+            app:destination="@id/movieInfo" />
+    </fragment>
     <fragment
         android:id="@+id/movieInfo"
         android:name="com.benshimoladir.guardians.MovieInfo"
         android:label="fragment_movie_info"
         tools:layout="@layout/fragment_movie_info" >
         <action
-            android:id="@+id/action_movieInfo_to_buyTickets2"
-            app:destination="@id/buyTickets" />
+            android:id="@+id/action_movieInfo_to_purchaseTickets"
+            app:destination="@id/purchaseTickets"
+            app:enterAnim="@anim/anim_enter_anim"
+            app:exitAnim="@anim/anim_exit_anim"
+            app:popEnterAnim="@anim/anim_exit_anim"
+            app:popExitAnim="@anim/anim_enter_anim" />
     </fragment>
     <fragment
-        android:id="@+id/buyTickets"
-        android:name="com.benshimoladir.guardians.BuyTickets"
-        android:label="fragment_buy_tickets"
-        tools:layout="@layout/fragment_buy_tickets" >
+        android:id="@+id/purchaseTickets"
+        android:name="com.benshimoladir.guardians.PurchaseTickets"
+        android:label="fragment_purchase_tickets"
+        tools:layout="@layout/fragment_purchase_tickets" >
         <action
-            android:id="@+id/action_buyTickets_to_purchaseSummary"
-            app:destination="@id/purchaseSummary" />
-        <action
-            android:id="@+id/action_buyTickets_pop"
-            app:popUpTo="@id/buyTickets"
+            android:id="@+id/action_purchaseTickets_pop"
+            app:popUpTo="@id/purchaseTickets"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_purchaseTickets_to_purchaseSummary"
+            app:destination="@id/purchaseSummary"
+            app:enterAnim="@anim/anim_enter_anim"
+            app:exitAnim="@anim/anim_exit_anim"
+            app:popEnterAnim="@anim/anim_exit_anim"
+            app:popExitAnim="@anim/anim_enter_anim" />
     </fragment>
     <fragment
         android:id="@+id/purchaseSummary"
@@ -33,23 +50,15 @@
         android:label="fragment_purchase_summary"
         tools:layout="@layout/fragment_purchase_summary" >
         <action
-            android:id="@+id/action_purchaseSummary_to_movieInfo"
-            app:destination="@id/movieInfo" />
-        <action
-            android:id="@+id/summaryReturnToInfo"
-            app:destination="@id/movieInfo" />
-        <action
             android:id="@+id/action_purchaseSummary_pop"
             app:popUpTo="@id/purchaseSummary"
             app:popUpToInclusive="true" />
-    </fragment>
-    <fragment
-        android:id="@+id/startupLoader"
-        android:name="com.benshimoladir.guardians.StartupLoader"
-        android:label="fragment_startup_loader"
-        tools:layout="@layout/fragment_startup_loader" >
         <action
-            android:id="@+id/action_startupLoader_to_movieInfo"
-            app:destination="@id/movieInfo" />
+            android:id="@+id/action_purchaseSummary_to_movieInfo"
+            app:destination="@id/movieInfo"
+            app:enterAnim="@anim/anim_enter_anim"
+            app:exitAnim="@anim/anim_exit_anim"
+            app:popEnterAnim="@anim/anim_exit_anim"
+            app:popExitAnim="@anim/anim_enter_anim" />
     </fragment>
 </navigation>

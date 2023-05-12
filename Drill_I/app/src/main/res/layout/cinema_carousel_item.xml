@@ -1,0 +1,9 @@
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image_carousel_item"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="5dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/scen_1"
+    />

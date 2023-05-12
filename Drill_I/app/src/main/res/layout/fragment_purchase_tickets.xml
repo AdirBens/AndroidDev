@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PurchaseTickets">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/guardians_night">
+        <Button
+            android:id="@+id/tickets_back_button"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_back_button"
+            style="@style/backButtonStyle" />
+
+        <TextView
+            style="@style/TitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/guardians_gold_dark"
+            android:text="@string/common_movie_name"
+            />
+
+        <TextView
+            style="@style/secTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/guardians_stone"
+            android:text="@string/purchaseTickets_hint_choose_tickets" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <LinearLayout
+                    android:id="@+id/choose_kids_number_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="5dp"
+
+                        android:src="@drawable/tickets_kids"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@+id/number_of_kids"
+                        android:layout_margin="5dp"
+                        style="@style/paragraphStyle"
+                        android:text="@string/purchaseTickets_hint_kids_number"                    />
+
+                    <SeekBar
+                        android:id="@+id/number_of_kids"
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:max="10"
+                        android:progress="0"
+                        android:progressTint="@color/guardians_gold_dark" />
+                    <TextView
+                        android:id="@+id/number_of_kids_legend"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@+id/number_of_kids"
+                        android:layout_margin="5dp"
+                        style="@style/mainTextStyle"
+                        android:text="@string/_zero_constant"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/choose_adults_number_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="105dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/tickets_adults" />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@+id/number_of_kids"
+                        style="@style/paragraphStyle"
+                        android:layout_margin="5dp"
+                        android:text="@string/purchaseTickets_hint_adults_number" />
+
+                    <SeekBar
+                        android:id="@+id/number_of_adults"
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:max="10"
+                        android:progressTint="@color/guardians_gold_dark"
+                        android:progress="0" />
+                    <TextView
+                        android:id="@+id/number_of_adults_legend"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@+id/number_of_kids"
+                        android:layout_margin="5dp"
+                        style="@style/mainTextStyle"
+                        android:text="@string/_zero_constant"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pick_date_button"
+                android:text="@string/purchaseTickets_hint_screening_date"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/chooseDatesButtonStyle"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/cinema_carousel"
+            android:text="@string/purchaseTickets_hint_theatre"
+            style="@style/paragraphStyle"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/cinema_carousel"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="135dp" />
+
+        <Button
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/orderNowBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/purchaseTickets_orderNow_btn"
+            style="@style/chooseTicketsButtonStyle"/>
+    </LinearLayout>
+
+
+</FrameLayout>
+

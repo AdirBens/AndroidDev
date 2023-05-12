@@ -1,59 +1,103 @@
 package com.benshimoladir.guardians
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.VISIBLE
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.benshimoladir.guardians.databinding.FragmentPurchaseSummaryBinding
+import com.google.android.material.snackbar.Snackbar
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [PurchaseSummary.newInstance] factory method to
- * create an instance of this fragment.
- */
 class PurchaseSummary : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private var _binding: FragmentPurchaseSummaryBinding? = null
+    private val binding get() = _binding!!
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+    private val adultTicketPrice = 20
+    private val kidTicketPrice = 15
+    private val vipExtra = 5
+
+    private var adults = 0
+    private var kids = 0
+    private var cinema = -1
+    private var date : String? = ""
+    private var totalPrice = 0
+
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        _binding = FragmentPurchaseSummaryBinding.inflate(inflater, container, false)
+
+        adults = requireArguments().getInt("adults")
+        kids = requireArguments().getInt("kids")
+        cinema = requireArguments().getInt("cinema")
+        date = requireArguments().getString("date")
+        totalPrice = calcTotalPrice(kids, adults, cinema)
+
+        binding.ticketsBackButton.setOnClickListener {
+            findNavController().navigate(R.id.action_purchaseSummary_pop)
+        }
+
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val payButton = binding.payButton
+        payButton.setOnClickListener {
+            payButton.text = getString(R.string.purchaseSummary_thank_you)
+            payButton.setBackgroundResource(R.color.happy_green)
+            payButton.isClickable = false
+            Snackbar.make(view, R.string.purchaseSummary_dontNeedToPay, 5000).show()
+        }
+
+        binding.summaryTotalPrice.text = totalPrice.toString()
+        binding.summaryScreeningDate.text = date.toString().subSequence(0, 10)
+        binding.summaryAdultsPrice.text = adults.toString()
+        binding.summaryKidsPrice.text = kids.toString()
+        binding.summaryCinema.text = getCinemaName(cinema)
+
+        if (cinema == 1) {
+            binding.summaryVipBadge.visibility = VISIBLE
+            binding.vipExtraBox.visibility = VISIBLE
+            binding.summaryVipExtra.text = calcVipExtra(kids, adults).toString()
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_purchase_summary, container, false)
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment PurchaseSummary.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            PurchaseSummary().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    private fun calcTotalPrice(numKids: Int, numAdults: Int, cinema: Int): Int {
+        var totalPrice = 0
+        val adultsTotal = numAdults * adultTicketPrice
+        val kidsTotal = numKids * kidTicketPrice
+
+        if (cinema == 1) {
+            totalPrice += calcVipExtra(numKids, numAdults)
+        }
+
+        totalPrice += adultsTotal + kidsTotal
+
+        return totalPrice
+    }
+
+    private fun calcVipExtra(numKids: Int, numAdults: Int): Int {
+        return vipExtra * (numKids + numAdults)
+    }
+
+    private fun getCinemaName(cinemaId: Int): String {
+        when (cinema) {
+            0 -> return getString(R.string.purchaseTickets_theatre_glilot)
+            1 -> return getString(R.string.purchaseTickets_theatre_idc)
+            2 -> return getString(R.string.purchaseTickets_theatre_krayot)
+            else -> return getString(R.string.purchaseTickets_theatre_glilot)
+        }
     }
 }

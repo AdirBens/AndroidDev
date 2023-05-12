@@ -4,22 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/background"
-
     tools:context=".MovieInfo">
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:background="@color/guardians_night">
         <ImageView
             android:id="@+id/info_banner"
             android:layout_width="match_parent"
             android:layout_height="169dp"
             android:layout_marginBottom="0dp"
-            android:src="@drawable/info_banner_shaded" />
+            android:src="@drawable/info_banner" />
 
         <TextView
             style="@style/TitleStyle"
@@ -28,9 +25,7 @@
             android:gravity="center|top"
             android:layout_marginTop="-60dp"
             android:layout_marginBottom="15dp"
-
-            android:text="@string/info_title"
-             />
+            android:text="@string/common_movie_name" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,23 +35,22 @@
             <ImageView
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:src="@drawable/guardians_offic_poster"/>
+                android:src="@drawable/info_poster"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <TextView
-                    style="@style/SeconderyTitleStyle"
+                    style="@style/secTitleStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/info_title" />
-
+                    android:text="@string/common_movie_name" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/genre"
-                    style="@style/MainTextStyle" />
+                    android:text="@string/movieInfo_genre"
+                    style="@style/mainTextStyle" />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -66,22 +60,22 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        style="@style/MainTextStyle"
-                        android:text="@string/release_year" />
+                        style="@style/mainTextStyle"
+                        android:text="@string/movieInfo_release" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        style="@style/MainTextStyle"
-                        android:text="@string/parental" />
+                        style="@style/mainTextStyle"
+                        android:text="@string/movieInfo_parental" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        style="@style/MainTextStyle"
-                        android:text="@string/movie_duration" />
+                        style="@style/mainTextStyle"
+                        android:text="@string/movieInfo_duration" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -94,8 +88,8 @@
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginEnd="10dp"
-                        android:src="@drawable/imdb_logo"
-                        android:text="@string/imdb_rating_title" />
+                        android:src="@drawable/info_icons_imdb"
+                        android:text="@string/movieInfo_imdb_rating" />
 
                     <LinearLayout
                         android:layout_gravity="center_horizontal|end"
@@ -108,34 +102,34 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="10"
                             android:layout_marginEnd="5dp"
-                            style="@style/MainTextStyle"
-                            android:text="@string/imdb_rating" />
+                            style="@style/mainTextStyle"
+                            android:text="@string/movieInfo_imdb_rating" />
                         <ImageView
                             android:layout_gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:src="@drawable/round_star_rate_24" />
+                            android:src="@drawable/common_star_icon_yellow" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
         <TextView
-            style="@style/ParagraphTextStyle"
+            style="@style/paragraphStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="0dp"
-            android:text="@string/story_line" />
+            android:text="@string/movieInfo_movie_plot" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tooltip_swipe_carousel"
-            style="@style/ParagraphTextStyle"
+            android:text="@string/movieInfo_hint_imageCarousel"
+            style="@style/paragraphStyle"
             android:layout_marginBottom="0dp"
             android:paddingBottom="0dp"
-            android:textColor="@color/grayedTextFont"/>
+            android:textColor="@color/guardians_stone_dark"/>
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/image_carousel"
@@ -145,6 +139,12 @@
             android:layout_width="match_parent"
             android:layout_height="135dp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/secTitleStyle"
+            android:layout_gravity="center"
+            android:text="@string/movieInfo_tickets_on_sale"/>
 
         <Button
             android:layout_gravity="center"
@@ -152,14 +152,8 @@
             android:id="@+id/gotBuyTicketsBTN"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="@string/buyTicketsBtn"
-            android:backgroundTint="@color/GuardiansGoldDark"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:drawableEnd="@drawable/ticket_icon_vec"
-            android:layout_marginTop="20dp"
-            android:padding="10dp" />
+            android:text="@string/movieInfo_goto_purchase_tickets"
+            style="@style/chooseTicketsButtonStyle"
+            />
     </LinearLayout>
-
 </FrameLayout>

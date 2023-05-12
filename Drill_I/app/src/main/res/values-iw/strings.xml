@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Guardians</string>
+
+    <string name="common_movie_name">Guardians Of The Galaxy</string>
+    <string name="common_back_button">Back</string>
+
+    <string name="loader_author_name">© By Adir Ben-Shimol</string>
+
+    <string name="movieInfo_movie_plot">Guardians Of The Galaxy</string>
+    <string name="movieInfo_genre">Guardians Of The Galaxy</string>
+    <string name="movieInfo_release">Guardians Of The Galaxy</string>
+    <string name="movieInfo_parental">Guardians Of The Galaxy</string>
+    <string name="movieInfo_duration">Guardians Of The Galaxy</string>
+    <string name="movieInfo_imdb_rating">Guardians Of The Galaxy</string>
+    <string name="movieInfo_hint_imageCarousel">Guardians Of The Galaxy</string>
+    <string name="movieInfo_tickets_on_sale">Guardians Of The Galaxy</string>
+    <string name="movieInfo_goto_purchase_tickets">Guardians Of The Galaxy</string>
+
+    <string name="purchaseTickets_hint_choose_tickets">Guardians Of The Galaxy</string>
+    <string name="purchaseTickets_hint_kids_number">Guardians Of The Galaxy</string>
+    <string name="purchaseTickets_hint_adults_number">Guardians Of The Galaxy</string>
+    <string name="purchaseTickets_hint_screening_date">Guardians Of The Galaxy</string>
+    <string name="purchaseTickets_hint_theatre">Guardians Of The Galaxy</string>
+    <string name="purchaseTickets_theatre_glilot">Cinema-City Glilot</string>
+    <string name="purchaseTickets_theatre_krayot">Yes-Planet Krayot</string>
+    <string name="purchaseTickets_theatre_idc">VIP Reichman</string>
+    <string name="purchaseTickets_orderNow_btn">Order Now!</string>
+
+    <string name="purchaseSummary_title">Yours purchase summary</string>
+    <string name="purchaseSummary_total_price">Yours purchase summary</string>
+    <string name="purchaseSummary_kids_price">Yours purchase summary</string>
+    <string name="purchaseSummary_adults_price">Yours purchase summary</string>
+    <string name="purchaseSummary_vip_extra">Yours purchase summary</string>
+    <string name="purchaseSummary_screening_date">Yours purchase summary</string>
+    <string name="purchaseSummary_screening_theatre">Yours purchase summary</string>
+    <string name="purchaseSummary_hint_barcode">Yours purchase summary</string>
+    <string name="purchaseSummary_thank_you">Yours purchase summary</string>
+    <string name="purchaseSummary_approveAndPay_btn">Approve and Pay</string>
+    <string name="_zero_constant">0</string>
+</resources>

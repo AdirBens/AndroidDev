@@ -45,19 +45,123 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="15dp"
             android:textColor="@color/textFont"
-            android:text="@string/choose_seat"
+            android:text="@string/choose_tickets"
             />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_gravity="center"
-            android:layout_marginEnd="30dp"
-            android:layout_marginStart="30dp"
-            android:src="@drawable/cinema_screen"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <LinearLayout
+                    android:id="@+id/choose_kids_number_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="5dp"
+
+                        android:src="@drawable/little_groot"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@+id/number_of_kids"
+                        android:layout_margin="5dp"
+                        style="@style/ParagraphTextStyle"
+                        android:text="@string/number_of_kids"                    />
+                    <SeekBar
+                        android:id="@+id/number_of_kids"
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_gravity="center"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:max="10"
+                        android:progress="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/choose_adults_number_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="105dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/star_lord" />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@+id/number_of_kids"
+                        style="@style/ParagraphTextStyle"
+                        android:layout_margin="5dp"
+                        android:text="@string/number_of_adults"                    />
+                    <SeekBar
+                        android:id="@+id/number_of_adults"
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_gravity="center"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:max="10"
+                        android:progress="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/pick_date_button"
+                android:text="Pick Date"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/cinema_carousel"
+            android:text="@string/our_theatres"
+            style="@style/ParagraphTextStyle"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/cinema_carousel"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="135dp" />
+
+        <Button
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/orderNowBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/orderNowBtn"
+            android:backgroundTint="@color/GuardiansGoldDark"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/ticket_icon_vec"
+            android:layout_marginTop="20dp"
+            android:padding="10dp" />
 
     </LinearLayout>
-
 
 </FrameLayout>

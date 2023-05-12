@@ -2,16 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="GuardiansGold">#eccb97</color>
-    <color name="GuardiansGoldDark">#99856c</color>
-    <color name="textFont">#DBE1E2</color>
-    <color name="grayedTextFont">#909292</color>
 
-    <color name="primaryBtn">#0867BD</color>
+    <color name="guardians_gold">#eccb97</color>
+    <color name="guardians_gold_dark">#99856c</color>
+    <color name="guardians_stone">#DBE1E2</color>
+    <color name="guardians_stone_dark">#909292</color>
+    <color name="guardians_night">#021019</color>
+    <color name="happy_green">#ABED5D</color>
 
-
-
-    <color name="background">#021019</color>
-    <color name="background_bright">#021E34</color>
 
 </resources>
